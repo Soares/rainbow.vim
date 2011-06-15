@@ -30,7 +30,7 @@
 
 " Section: highlight {{{1
 
-function rainbow#Activate()
+function! rainbow#Activate()
     highlight default level1c  ctermbg=LightGray ctermfg=brown        guibg=WhiteSmoke   guifg=RoyalBlue3
     highlight default level2c  ctermbg=LightGray ctermfg=Darkblue     guibg=WhiteSmoke   guifg=SeaGreen3
     highlight default level3c  ctermbg=LightGray ctermfg=darkgray     guibg=WhiteSmoke   guifg=DarkOrchid3
@@ -50,7 +50,7 @@ function rainbow#Activate()
     let g:rainbow#active = 1
 endfunction
 
-function rainbow#Clear()
+function! rainbow#Clear()
     let i = 0
     while i != 16
         let i = i + 1
@@ -59,7 +59,7 @@ function rainbow#Clear()
     let g:rainbow#active = 0
 endfunction
 
-function rainbow#Toggle ()
+function! rainbow#Toggle ()
     if !exists('g:rainbow#active')
         call rainbow#LoadRound ()
         call rainbow#LoadSquare ()
@@ -79,7 +79,7 @@ syntax cluster rainbow contains=@TOP,level1,level2,level3,level4,level5,level6,l
 
 " Subsection: parentheses or round brackets: {{{2
 "
-function rainbow#LoadRound ()
+function! rainbow#LoadRound ()
     syntax region level1 matchgroup=level1c start=/(/ end=/)/ contains=TOP,level1,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level2 matchgroup=level2c start=/(/ end=/)/ contains=TOP,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level3 matchgroup=level3c start=/(/ end=/)/ contains=TOP,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
@@ -101,7 +101,7 @@ endfunction
 
 " Subsection: box brackets or square brackets: {{{2
 "
-function rainbow#LoadSquare ()
+function! rainbow#LoadSquare ()
     syntax region level1 matchgroup=level1c start=/\[/ end=/\]/ contains=TOP,level1,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level2 matchgroup=level2c start=/\[/ end=/\]/ contains=TOP,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level3 matchgroup=level3c start=/\[/ end=/\]/ contains=TOP,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
@@ -123,7 +123,7 @@ endfunction
 
 " Subsection: curly brackets or braces: {{{2
 "
-function rainbow#LoadBraces ()
+function! rainbow#LoadBraces ()
     syntax region level1 matchgroup=level1c start=/{/ end=/}/ contains=TOP,level1,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level2 matchgroup=level2c start=/{/ end=/}/ contains=TOP,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level3 matchgroup=level3c start=/{/ end=/}/ contains=TOP,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
@@ -145,7 +145,7 @@ endfunction
 
 " Subsection: angle brackets or chevrons: {{{2
 "
-function rainbow#LoadChevrons ()
+function! rainbow#LoadChevrons ()
     syntax region level1 matchgroup=level1c start=/</ end=/>/ contains=TOP,level1,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level2 matchgroup=level2c start=/</ end=/>/ contains=TOP,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
     syntax region level3 matchgroup=level3c start=/</ end=/>/ contains=TOP,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
