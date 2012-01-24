@@ -31,22 +31,22 @@
 " Section: highlight {{{1
 
 function! rainbow#Activate()
-    highlight default level1c  ctermbg=LightGray ctermfg=brown        guibg=WhiteSmoke   guifg=RoyalBlue3
-    highlight default level2c  ctermbg=LightGray ctermfg=Darkblue     guibg=WhiteSmoke   guifg=SeaGreen3
-    highlight default level3c  ctermbg=LightGray ctermfg=darkgray     guibg=WhiteSmoke   guifg=DarkOrchid3
-    highlight default level4c  ctermbg=LightGray ctermfg=darkgreen    guibg=WhiteSmoke   guifg=firebrick3
-    highlight default level5c  ctermbg=LightGray ctermfg=darkcyan     guibg=AntiqueWhite guifg=RoyalBlue3
-    highlight default level6c  ctermbg=LightGray ctermfg=darkred      guibg=AntiqueWhite guifg=SeaGreen3
-    highlight default level7c  ctermbg=LightGray ctermfg=darkmagenta  guibg=AntiqueWhite guifg=DarkOrchid3
-    highlight default level8c  ctermbg=LightGray ctermfg=brown        guibg=AntiqueWhite guifg=firebrick3
-    highlight default level9c  ctermbg=LightGray ctermfg=gray         guibg=LemonChiffon guifg=RoyalBlue3
-    highlight default level10c ctermbg=LightGray ctermfg=black        guibg=LemonChiffon guifg=SeaGreen3
-    highlight default level11c ctermbg=LightGray ctermfg=darkmagenta  guibg=LemonChiffon guifg=DarkOrchid3
-    highlight default level12c ctermbg=LightGray ctermfg=Darkblue     guibg=LemonChiffon guifg=firebrick3
-    highlight default level13c ctermbg=LightGray ctermfg=darkgreen    guibg=AliceBlue    guifg=RoyalBlue3
-    highlight default level14c ctermbg=LightGray ctermfg=darkcyan     guibg=AliceBlue    guifg=SeaGreen3
-    highlight default level15c ctermbg=LightGray ctermfg=darkred      guibg=AliceBlue    guifg=DarkOrchid3
-    highlight default level16c ctermbg=LightGray ctermfg=red          guibg=AliceBlue    guifg=firebrick3
+    highlight default level1c  ctermbg=none ctermfg=red          guibg=WhiteSmoke   guifg=RoyalBlue3
+    highlight default level2c  ctermbg=none ctermfg=yellow       guibg=WhiteSmoke   guifg=SeaGreen3
+    highlight default level3c  ctermbg=none ctermfg=green        guibg=WhiteSmoke   guifg=DarkOrchid3
+    highlight default level4c  ctermbg=none ctermfg=cyan         guibg=WhiteSmoke   guifg=firebrick3
+    highlight default level5c  ctermbg=none ctermfg=blue         guibg=AntiqueWhite guifg=RoyalBlue3
+    highlight default level6c  ctermbg=none ctermfg=magenta      guibg=AntiqueWhite guifg=SeaGreen3
+    highlight default level7c  ctermbg=none ctermfg=darkred      guibg=AntiqueWhite guifg=DarkOrchid3
+    highlight default level8c  ctermbg=none ctermfg=darkyellow   guibg=AntiqueWhite guifg=firebrick3
+    highlight default level9c  ctermbg=none ctermfg=darkgreen    guibg=LemonChiffon guifg=RoyalBlue3
+    highlight default level10c ctermbg=none ctermfg=darkcyan     guibg=LemonChiffon guifg=SeaGreen3
+    highlight default level11c ctermbg=none ctermfg=darkmagenta  guibg=LemonChiffon guifg=DarkOrchid3
+    highlight default level12c ctermbg=none ctermfg=red          guibg=LemonChiffon guifg=firebrick3
+    highlight default level13c ctermbg=none ctermfg=yellow       guibg=AliceBlue    guifg=RoyalBlue3
+    highlight default level14c ctermbg=none ctermfg=green        guibg=AliceBlue    guifg=SeaGreen3
+    highlight default level15c ctermbg=none ctermfg=blue         guibg=AliceBlue    guifg=DarkOrchid3
+    highlight default level16c ctermbg=none ctermfg=magenta      guibg=AliceBlue    guifg=firebrick3
     let g:rainbow#active = 1
 endfunction
 
